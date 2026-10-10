@@ -175,6 +175,9 @@ function renderRecord(r){
       '<div class="ff"><div class="ff-label">公证机构签章及核发</div><div class="ff-val">香港叶谢邓律师行</div></div>'+
       '<div class="ff"><div class="ff-label">司法区块链存证专网</div><div class="ff-val">存证状态：'+(r.hash?'VERIFIED ON-CHAIN':'同步中')+'</div></div>'+
     '</div>'+
+    '<div style="text-align:center;margin:12px 0 24px">'+
+      '<a href="tx.html?seq='+esc(r.seq)+'" target="_blank" style="color:#1890ff;text-decoration:none;font-size:14px;font-weight:600">查看链上转账详情 →</a>'+
+    '</div>'+
   '</div>';
 }
 function doLookup(){
